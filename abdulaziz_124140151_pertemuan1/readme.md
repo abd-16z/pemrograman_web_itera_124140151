@@ -40,7 +40,7 @@ Aplikasi **Mini POS (Point of Sale) / Kasir Sederhana** dibuat untuk mengelola t
 
 ## Tangkapan Layar (Screenshot)
 1. **Tampilan Form Utama & Keranjang:** <img width="1917" height="957" alt="image" src="https://github.com/user-attachments/assets/3e437688-7254-42d0-b8e2-5c3c0456e84d" />
-2. **Pesan Validasi Error:** <img width="457" height="627" alt="image" src="https://github.com/user-attachments/assets/135c7894-d4ad-4f27-8ba1-9151d226e768" />
+2. **Pesan Validasi Error:** <img width="1368" height="786" alt="image" src="https://github.com/user-attachments/assets/c0642654-8211-4eac-a893-7e9e38aa3595" />
 3. **Kalkulasi Diskon & Kembalian:** <img width="893" height="690" alt="image" src="https://github.com/user-attachments/assets/2cfc8e65-4f4e-4600-9df4-09a6020f95b2" />
 
 ---
