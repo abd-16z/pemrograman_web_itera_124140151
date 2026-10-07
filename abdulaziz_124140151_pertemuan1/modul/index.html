@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan JavaScript Dasar - Pertemuan 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    section { border: 1px solid #ccc; border-radius: 6px; padding: 15px; margin-bottom: 20px; }
+    table { border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #999; padding: 6px 12px; text-align: left; }
+    button { padding: 5px 12px; margin: 3px; cursor: pointer; }
+    input { padding: 5px; margin: 3px; }
+    .error { color: red; font-size: 0.9em; }
+    .selesai { text-decoration: line-through; color: gray; }
+    .dark { background-color: #1a1a1a; color: #eee; }
+    .dark section { border-color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Latihan JavaScript Dasar</h1>
+
+  <!-- ================= LATIHAN 1 ================= -->
+  <section>
+    <h2>Latihan 1: Variabel &amp; Kondisional</h2>
+    <div id="result"></div>
+  </section>
+
+  <!-- ================= LATIHAN 2 ================= -->
+  <section>
+    <h2>Latihan 2: Loop &amp; Fungsi</h2>
+    <div id="result-loop"></div>
+
+    <h3>Loop Tabel Perkalian</h3>
+    <input type="number" id="angka-perkalian" placeholder="Masukkan angka">
+    <button id="btn-tabel-perkalian">Tampilkan Tabel</button>
+    <ul id="tabel-perkalian"></ul>
+
+    <h3>Faktorial</h3>
+    <input type="number" id="angka-faktorial" placeholder="Masukkan angka">
+    <button id="btn-faktorial">Hitung Faktorial</button>
+    <p id="faktorial-output"></p>
+
+    <h3>Bilangan Prima</h3>
+    <input type="number" id="angka-prima" placeholder="Masukkan angka">
+    <button id="btn-prima">Cek Prima</button>
+    <p id="prima-output"></p>
+
+    <h3>Kalkulator BMI</h3>
+    <input type="number" id="berat" placeholder="Berat badan (kg)">
+    <input type="number" id="tinggi" placeholder="Tinggi badan (cm)">
+    <button id="btn-bmi">Hitung BMI</button>
+    <div id="bmi-output"></div>
+  </section>
+
+  <!-- ================= LATIHAN 3 ================= -->
+  <section>
+    <h2>Latihan 3: Array &amp; Objek (Data Mahasiswa)</h2>
+
+    <div>
+      <button id="btn-sort-asc">Urutkan Nama (A-Z)</button>
+      <button id="btn-sort-desc">Urutkan Nama (Z-A)</button>
+    </div>
+
+    <h3>Form Mahasiswa</h3>
+    <input type="text" id="mhs-nama" placeholder="Nama">
+    <input type="text" id="mhs-nim" placeholder="NIM">
+    <input type="text" id="mhs-jurusan" placeholder="Jurusan">
+    <input type="number" id="mhs-nilai" placeholder="Nilai">
+    <button id="btn-tambah-mhs">Tambah</button>
+    <button id="btn-batal-edit" style="display:none">Batal Edit</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th><th>Nama</th><th>NIM</th><th>Jurusan</th><th>Nilai</th><th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tabel-mahasiswa"></tbody>
+    </table>
+    <div id="info-mahasiswa"></div>
+  </section>
+
+  <!-- ================= LATIHAN 4 ================= -->
+  <section>
+    <h2>Latihan 4: DOM &amp; API</h2>
+
+    <button id="btn-darkmode">Toggle Dark Mode</button>
+
+    <h3>Form Mahasiswa Baru (dengan validasi + localStorage)</h3>
+    <input type="text" id="form-nama" placeholder="Nama (min 3 karakter)">
+    <input type="text" id="form-nim" placeholder="NIM">
+    <input type="text" id="form-jurusan" placeholder="Jurusan">
+    <button id="btn-simpan-mhs">Simpan</button>
+    <p id="form-error" class="error"></p>
+    <ul id="daftar-mahasiswa-simpan"></ul>
+
+    <h3>Daftar Post dari API (search + pagination)</h3>
+    <input type="text" id="search-post" placeholder="Cari berdasarkan title...">
+    <button id="btn-fetch">Ambil Data Post</button>
+    <div id="api-output"></div>
+    <div>
+      <button id="btn-prev">Previous</button>
+      <span id="halaman-info"></span>
+      <button id="btn-next">Next</button>
+    </div>
+
+    <h3>Todo List</h3>
+    <input type="text" id="todo-input" placeholder="Tulis tugas baru...">
+    <button id="btn-tambah-todo">Tambah</button>
+    <ul id="todo-list"></ul>
+  </section>
+
+  <!-- Menghubungkan dengan file JavaScript -->
+  <script src="latihan1.js"></script>
+</body>
+</html>
