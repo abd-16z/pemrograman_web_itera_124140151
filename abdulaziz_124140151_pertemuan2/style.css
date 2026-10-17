@@ -1,0 +1,291 @@
+/* ==========================================
+   1. RESET & BASE STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eef2f5;
+  padding-bottom: 15px;
+}
+
+header h1 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+header p,
+.lead {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.ex .lead {
+  margin-bottom: 15px;
+}
+
+/* Navigasi antar latihan */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.nav a {
+  padding: 8px 14px;
+  background-color: #f1f5f9;
+  color: #475569;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+/* ==========================================
+   2. SECTION & CARD (gaya fieldset)
+   ========================================== */
+.ex {
+  margin-bottom: 35px;
+  scroll-margin-top: 20px;
+}
+
+h2,
+.ex-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+/* ==========================================
+   3. FORM
+   ========================================== */
+input,
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333333;
+  background-color: #f8fafc;
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input {
+  flex: 1 1 140px;
+}
+
+textarea {
+  width: 100%;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 0.85rem;
+  resize: vertical;
+}
+
+textarea + textarea {
+  margin-top: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background-color: #ffffff;
+}
+
+/* ==========================================
+   4. BUTTON
+   ========================================== */
+button {
+  padding: 10px 16px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+button:focus-visible,
+.nav a:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.4);
+  outline-offset: 1px;
+}
+
+/* ==========================================
+   5. OUTPUT
+   ========================================== */
+pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 12px 15px;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  min-height: 2.8em;
+}
+
+.err {
+  color: #ef4444;
+}
+
+pre .err {
+  color: #fca5a5;
+}
+
+.box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-top: 8px;
+}
+
+.box ul {
+  padding-left: 20px;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fef3c7;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.muted {
+  color: #7f8c8d;
+  align-self: center;
+  font-size: 0.9rem;
+}
+
+.stok-low {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.item:hover {
+  background-color: #f8fafc;
+}
+
+.tag {
+  font-size: 0.78rem;
+  background-color: #f1f5f9;
+  color: #475569;
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+.spin {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #e2e8f0;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: -2px;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin { animation: none; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 20px; }
+  .row { flex-direction: column; }
+  input { flex-basis: auto; }
+}
