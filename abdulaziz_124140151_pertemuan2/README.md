@@ -20,14 +20,15 @@ Tugas Praktikum Pertemuan 2 — JavaScript Next Gen (ES6+).
 
 Semua data tugas, jadwal kuliah, dan catatan disimpan di `localStorage` dengan kunci `meja-kuliah-v1` (dilengkapi data contoh awal otomatis saat pertama kali dibuka).
 
-## Struktur
+## Struktur Proyek
+
 personal-dashboard/
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
 └── screenshot/
-└── dashboard.png
+    └── dashboard.png
 
 ## Cara menjalankan
 
