@@ -41,7 +41,7 @@ personal-dashboard/
 
 ## Screenshot
 
-![Tampilan dashboard](.screenshot/dashboard.png)
+![Tampilan dashboard](screenshot/dashboard.png)
 
 ## Fitur ES6+ yang diimplementasikan
 
