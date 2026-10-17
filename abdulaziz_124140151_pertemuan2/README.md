@@ -22,13 +22,15 @@ Semua data tugas, jadwal kuliah, dan catatan disimpan di `localStorage` dengan k
 
 ## Struktur Proyek
 
+```text
 personal-dashboard/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
+├── index.html          # Halaman utama dashboard
+├── style.css           # Styling dashboard
+├── script.js           # Logika dan interaktivitas
+├── README.md           # Dokumentasi proyek
 └── screenshot/
-    └── dashboard.png
+    └── dashboard.png   # Preview dashboard
+```
 
 ## Cara menjalankan
 
