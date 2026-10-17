@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan JavaScript Next Gen (ES6+)</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="container">
+<header>
+<h1>Latihan JavaScript Next Gen (ES6+)</h1>
+<p class="lead">Semua latihan Pertemuan 2 dalam satu halaman. Buka Console (F12) untuk melihat log.</p>
+</header>
+<nav class="nav" aria-label="Daftar latihan"><a href="#latihan-1">1. let, const, arrow function, template literals</a><a href="#latihan-2">2. Destructuring, spread, dan rest</a><a href="#latihan-3">3. Classes dan object literals</a><a href="#latihan-4">4. Modern array methods</a><a href="#latihan-5">5. Promise dan async/await</a></nav>
+<section class="ex" id="latihan-1"><h2 class="ex-title">Latihan 1: let, const, arrow function, template literals</h2>
+<p class="lead">Buka juga Console (F12) untuk melihat log.</p>
+
+<section class="card"><h3>1. Ubah nilai const dan lihat error</h3>
+<p>const tidak bisa diberi nilai baru, tetapi isi objek const masih bisa diubah.</p>
+<div class="row"><input id="e1-constVal" type="number" value="4" aria-label="Nilai baru"><button id="e1-btnConst">Coba ubah PI</button><button id="e1-btnConstObj">Ubah isi objek const</button></div>
+<pre id="e1-out1"></pre></section>
+
+<section class="card"><h3>2. Perilaku var di dalam dan luar block</h3>
+<p>var bocor keluar block, let tidak.</p>
+<div class="row"><button id="e1-btnVar">Jalankan perbandingan</button></div>
+<pre id="e1-out2"></pre></section>
+
+<section class="card"><h3>3. Arrow function dengan berbagai sintaks</h3>
+<div class="row"><input id="e1-num" type="number" value="5" aria-label="Angka"><button id="e1-btnArrow">Hitung</button></div>
+<pre id="e1-out3"></pre></section>
+
+<section class="card"><h3>4. Template literals untuk HTML string</h3>
+<div class="row"><input id="e1-pName" placeholder="Nama produk" value="Keyboard Mekanik"><input id="e1-pPrice" type="number" placeholder="Harga" value="850000"><input id="e1-pStock" type="number" placeholder="Stok" value="3"><button id="e1-btnTpl">Buat kartu</button></div>
+<div id="e1-cardHost"></div></section></section>
+<section class="ex" id="latihan-2"><h2 class="ex-title">Latihan 2: Destructuring, spread, dan rest</h2>
+<p class="lead">Empat latihan dari modul.</p>
+
+<section class="card"><h3>1. Destructuring objek nested (3 level)</h3>
+<p>Edit JSON lalu ambil <code>kota</code>, <code>jalan</code>, dan <code>lat</code> langsung dari struktur bersarang.</p>
+<textarea id="e2-nestedJson" rows="9"></textarea>
+<div class="row" style="margin-top:8px"><button id="e2-btnNested">Destructure</button></div><pre id="e2-out1"></pre></section>
+
+<section class="card"><h3>2. Rest parameters → statistik</h3>
+<div class="row"><input id="e2-nums" value="12, 7, 30, 5, 18" aria-label="Daftar angka"><button id="e2-btnStats">Hitung</button></div><pre id="e2-out2"></pre></section>
+
+<section class="card"><h3>3. Merge 3 objek dengan spread</h3>
+<p>Objek paling kanan menimpa properti yang sama.</p>
+<textarea id="e2-objA" rows="2"></textarea><textarea id="e2-objB" rows="2"></textarea><textarea id="e2-objC" rows="2"></textarea>
+<div class="row" style="margin-top:8px"><button id="e2-btnMerge">Gabungkan</button></div><pre id="e2-out3"></pre></section>
+
+<section class="card"><h3>4. Destructuring di dalam for…of</h3>
+<div class="row"><button id="e2-btnLoop">Jalankan loop</button></div><pre id="e2-out4"></pre></section></section>
+<section class="ex" id="latihan-3"><h2 class="ex-title">Latihan 3: Classes dan object literals</h2>
+<p class="lead">Product → DigitalProduct dan PhysicalProduct.</p>
+
+<section class="card"><h3>1. Inheritance + 2. getter/setter + 4. default parameter &amp; destructuring</h3>
+<p>Isi form lalu buat produk. Kosongkan kolom untuk melihat nilai default bekerja.</p>
+<div class="row">
+  <select id="e3-tipe" aria-label="Tipe produk"><option value="digital">Digital</option><option value="fisik">Fisik</option></select>
+  <input id="e3-nama" placeholder="Nama"><input id="e3-harga" type="number" placeholder="Harga">
+  <input id="e3-extra" type="number" placeholder="Ukuran file (MB) / berat (kg)">
+  <button id="e3-btnBuat">Buat produk</button>
+</div>
+<div id="e3-produkList"></div></section>
+
+<section class="card"><h3>2. Uji setter</h3>
+<p>Setter <code>harga</code> menolak nilai negatif.</p>
+<div class="row"><input id="e3-hargaBaru" type="number" value="-500" aria-label="Harga baru"><button id="e3-btnSetter">Set harga produk pertama</button></div><pre id="e3-out2"></pre></section>
+
+<section class="card"><h3>3. Computed property names</h3>
+<p>Nama properti ditentukan oleh input.</p>
+<div class="row"><input id="e3-kunci" value="warna" aria-label="Nama properti"><input id="e3-nilai" value="biru" aria-label="Nilai"><button id="e3-btnKey">Buat objek</button></div><pre id="e3-out3"></pre></section></section>
+<section class="ex" id="latihan-4"><h2 class="ex-title">Latihan 4: Modern array methods</h2>
+<p class="lead">Dataset penjualan ditampilkan di bawah; semua tombol memakai data ini.</p>
+
+<section class="card"><h3>Dataset</h3><pre id="e4-dataset"></pre></section>
+
+<section class="card"><h3>1. groupBy dengan reduce()</h3>
+<div class="row"><select id="e4-groupKey" aria-label="Kelompokkan berdasarkan"><option value="kategori">kategori</option><option value="kota">kota</option></select><button id="e4-btnGroup">Kelompokkan</button></div><pre id="e4-out1"></pre></section>
+
+<section class="card"><h3>2. Rata-rata dari array of objects</h3>
+<div class="row"><select id="e4-avgKey" aria-label="Properti"><option value="harga">harga</option><option value="terjual">terjual</option></select><button id="e4-btnAvg">Hitung rata-rata</button></div><pre id="e4-out2"></pre></section>
+
+<section class="card"><h3>3. Flatten array bersarang</h3>
+<div class="row"><button id="e4-btnFlat">Flat dengan flat() &amp; flatMap()</button></div><pre id="e4-out3"></pre></section>
+
+<section class="card"><h3>4. filter + map + reduce</h3>
+<div class="row"><input id="e4-minTerjual" type="number" value="10" aria-label="Minimal terjual"><button id="e4-btnChain">Analisis</button></div><pre id="e4-out4"></pre></section></section>
+<section class="ex" id="latihan-5"><h2 class="ex-title">Latihan 5: Promise dan async/await</h2>
+<p class="lead">API di sini disimulasikan dengan delay, jadi berjalan tanpa internet.</p>
+
+<section class="card"><h3>1. Fetch beberapa endpoint lalu gabungkan</h3>
+<div class="row"><button id="e5-btnMulti">Ambil user + posts + todos</button></div><pre id="e5-out1"></pre></section>
+
+<section class="card"><h3>2. Retry dengan exponential backoff</h3>
+<p>Layanan gagal sebanyak N kali pertama. Jeda antar percobaan: 300 ms, 600 ms, 1200 ms, …</p>
+<div class="row"><input id="e5-failCount" type="number" min="0" max="5" value="3" aria-label="Jumlah kegagalan"><button id="e5-btnRetry">Coba panggil</button></div><pre id="e5-out2"></pre></section>
+
+<section class="card"><h3>3. Loading state</h3>
+<div class="row"><button id="e5-btnLoad">Muat data</button></div><div id="e5-out3" class="box" role="status">Belum ada data.</div></section>
+
+<section class="card"><h3>4. Error boundary</h3>
+<div class="row"><button id="e5-btnOk">Operasi sukses</button><button id="e5-btnFail">Operasi gagal</button></div><div id="e5-out4" class="box" role="status">Menunggu aksi.</div></section>
+
+<section class="card"><h3>5. Pagination</h3>
+<div class="row"><button id="e5-btnPrev">Sebelumnya</button><button id="e5-btnNext">Berikutnya</button><span id="e5-pageInfo" class="muted"></span></div><div id="e5-out5" class="box"></div></section>
+
+<section class="card"><h3>6. Pencarian dengan debounce</h3>
+<p>Permintaan dikirim 400 ms setelah berhenti mengetik. Hasil lama diabaikan.</p>
+<div class="row"><input id="e5-search" type="search" placeholder="Cari mata kuliah…" aria-label="Cari mata kuliah"></div><pre id="e5-out6"></pre></section></section>
+</div>
+<script src="script.js"></script>
+</body></html>
