@@ -1,4 +1,4 @@
-# Meja Kuliah — Personal Dashboard
+# Personal Dashboard
 
 Dashboard pribadi untuk mahasiswa. Satu halaman untuk mengelola tugas beserta tingkat prioritas dan tenggat waktu, mencatat jadwal kuliah, menyimpan catatan cepat, melihat cuaca kampus ITERA (Lampung Selatan), dan membaca kutipan motivasi harian.
 
