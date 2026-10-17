@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meja Kuliah — Personal Dashboard</title>
+  <title>Personal Dashboard - Abdul Aziz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,30 +21,83 @@
     <small id="quoteAuthor"></small>
   </section>
 
+  <section class="stats-grid" aria-label="Ringkasan tugas">
+    <div class="stat-card">
+      <span class="stat-label">Total Tugas</span>
+      <strong id="statTotal" class="stat-value">0</strong>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Belum Selesai</span>
+      <strong id="statActive" class="stat-value warning">0</strong>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Terlambat</span>
+      <strong id="statOverdue" class="stat-value danger">0</strong>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Selesai</span>
+      <strong id="statDone" class="stat-value success">0</strong>
+    </div>
+  </section>
+
   <main class="grid">
-    <section class="panel tasks">
-      <div class="panel-head">
-        <h2>Tugas &amp; deadline</h2>
-        <span id="taskCount" class="muted"></span>
-      </div>
-      <div class="bar"><span id="progress"></span></div>
+    <div class="main-col">
+      <section class="panel tasks">
+        <div class="panel-head">
+          <h2>Tugas &amp; deadline</h2>
+          <span id="taskCount" class="muted"></span>
+        </div>
+        <div class="bar"><span id="progress"></span></div>
 
-      <form id="taskForm" class="form-row" autocomplete="off">
-        <input type="hidden" id="taskId">
-        <input id="taskTitle" placeholder="Judul tugas" required maxlength="80">
-        <input id="taskCourse" placeholder="Mata kuliah" maxlength="40">
-        <input id="taskDeadline" type="date">
-        <button type="submit" id="taskSubmit" class="btn primary">Tambah tugas</button>
-        <button type="button" id="taskCancel" class="btn" hidden>Batal</button>
-      </form>
+        <form id="taskForm" class="form-row" autocomplete="off">
+          <input type="hidden" id="taskId">
+          <input id="taskTitle" placeholder="Judul tugas" required maxlength="80">
+          <input id="taskCourse" placeholder="Mata kuliah" maxlength="40">
+          <input id="taskDeadline" type="date">
+          <select id="taskPriority" aria-label="Prioritas tugas">
+            <option value="medium">Prioritas: Sedang</option>
+            <option value="high">Prioritas: Tinggi</option>
+            <option value="low">Prioritas: Rendah</option>
+          </select>
+          <div class="form-actions">
+            <button type="submit" id="taskSubmit" class="btn primary">Tambah tugas</button>
+            <button type="button" id="taskCancel" class="btn" hidden>Batal</button>
+          </div>
+        </form>
 
-      <div class="chips" role="group" aria-label="Filter tugas">
-        <button class="chip active" data-filter="all">Semua</button>
-        <button class="chip" data-filter="active">Belum selesai</button>
-        <button class="chip" data-filter="done">Selesai</button>
-      </div>
-      <ul id="taskList" class="list"></ul>
-    </section>
+        <div class="toolbar">
+          <div class="chips" role="group" aria-label="Filter tugas">
+            <button class="chip active" data-filter="all">Semua</button>
+            <button class="chip" data-filter="active">Belum selesai</button>
+            <button class="chip" data-filter="done">Selesai</button>
+          </div>
+          <input id="taskSearch" class="search-input" type="search" placeholder="Cari tugas atau matkul…">
+        </div>
+
+        <ul id="taskList" class="list"></ul>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Jadwal kuliah</h2>
+          <span id="scheduleCount" class="muted"></span>
+        </div>
+        <form id="scheduleForm" class="form-schedule" autocomplete="off">
+          <input id="schedCourse" placeholder="Nama mata kuliah" required maxlength="50">
+          <select id="schedDay" aria-label="Hari kuliah">
+            <option value="Senin">Senin</option>
+            <option value="Selasa">Selasa</option>
+            <option value="Rabu">Rabu</option>
+            <option value="Kamis">Kamis</option>
+            <option value="Jumat">Jumat</option>
+          </select>
+          <input id="schedTime" placeholder="Jam (mis: 08.00 - 09.40)" required maxlength="25">
+          <input id="schedRoom" placeholder="Ruang (mis: GK2-104)" maxlength="25">
+          <button type="submit" class="btn primary">Tambah</button>
+        </form>
+        <ul id="scheduleList" class="list"></ul>
+      </section>
+    </div>
 
     <aside class="side">
       <section class="panel">
@@ -55,7 +108,7 @@
       <section class="panel">
         <div class="panel-head"><h2>Catatan cepat</h2></div>
         <form id="noteForm" class="form-col" autocomplete="off">
-          <textarea id="noteText" rows="2" placeholder="Tulis catatan…" required></textarea>
+          <textarea id="noteText" rows="3" placeholder="Tulis catatan penting, link materi, atau pengingat…" required></textarea>
           <button class="btn primary" type="submit">Simpan catatan</button>
         </form>
         <ul id="noteList" class="list notes"></ul>
@@ -63,7 +116,10 @@
     </aside>
   </main>
 
-  <footer class="muted">Data tersimpan di browser (localStorage).</footer>
+  <footer class="muted">
+    <span>Data tersimpan di browser (localStorage).</span>
+    <button id="resetSeedBtn" class="btn-link" type="button">Muat ulang data contoh</button>
+  </footer>
 </div>
   <script src="script.js"></script>
 </body>
