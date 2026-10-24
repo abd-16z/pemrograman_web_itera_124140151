@@ -79,8 +79,6 @@ npx vitest run --reporter=verbose
 
 ## Screenshot Antarmuka & Laporan Testing
 
-> *Simpan hasil tangkapan layar aplikasi pada folder `screenshots/` saat pengumpulan.*
-
 ### 1. Halaman Utama (Daftar Buku, Form, & Filter)
 ![Halaman Utama](screenshots/halaman_utama.png)
 
