@@ -1,4 +1,4 @@
-# Tugas Praktikum 3: Aplikasi Manajemen Buku Pribadi (Koleksi BukuKu)
+# Tugas Praktikum 3: Aplikasi Manajemen Buku Pribadi (Koleksi Buku)
 **Mata Kuliah:** Praktikum Pengembangan Aplikasi Web (PAW)  
 **Topik:** Konsep Dasar React  
 
