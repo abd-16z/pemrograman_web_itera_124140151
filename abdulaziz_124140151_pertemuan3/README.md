@@ -80,16 +80,16 @@ npx vitest run --reporter=verbose
 ## Screenshot Antarmuka & Laporan Testing
 
 ### 1. Halaman Utama (Daftar Buku, Form, & Filter)
-![Halaman Utama](screenshots/halaman_utama.png)
+![Halaman Utama](screenshot/halaman_utama.png)
 
 ### 2. Validasi Form Input (Error Handling)
-![Validasi Form](screenshots/validasi_form.png)
+![Validasi Form](screenshot/validasi_form.png)
 
 ### 3. Halaman Statistik Koleksi Buku (`/stats`)
-![Halaman Statistik](screenshots/halaman_statistik.png)
+![Halaman Statistik](screenshot/halaman_statistik.png)
 
 ### 4. Laporan Hasil Eksekusi Unit Test di Terminal
-![Hasil Unit Test](screenshots/hasil_unit_test.png)
+![Hasil Unit Test](screenshot/hasil_unit_test.png)
 
 
 ---
