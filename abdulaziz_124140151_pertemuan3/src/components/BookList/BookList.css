@@ -1,0 +1,92 @@
+/* ==========================================
+   DAFTAR BUKU (mengikuti style tabel detail.html)
+   ========================================== */
+.book-list {
+  width: 100%;
+}
+
+.book-list table {
+  margin-bottom: 0;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.book-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.book-author {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-milik {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-baca {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-beli {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.book-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #2563eb;
+}
+
+.delete-btn {
+  background-color: #64748b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+}
+
+.empty-books {
+  margin-bottom: 0;
+}
