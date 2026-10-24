@@ -8,7 +8,6 @@
 - **Nama Lengkap:** Abdul Aziz
 - **NIM:** 124140151
 - **Kelas Praktikum:** RB
-- **Tautan Repositori GitHub:** ``
 
 ---
 
