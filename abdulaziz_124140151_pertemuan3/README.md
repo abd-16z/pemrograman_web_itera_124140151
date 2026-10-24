@@ -5,9 +5,9 @@
 ---
 
 ## 👤 Identitas Mahasiswa
-- **Nama Lengkap:** [NAMA LENGKAP MAHASISWA]
-- **NIM:** [NIM MAHASISWA]
-- **Kelas Praktikum:** [RA / RB]
+- **Nama Lengkap:** Abdul Aziz
+- **NIM:** 124140151
+- **Kelas Praktikum:** RB
 - **Tautan Repositori GitHub:** `https://github.com/[USERNAME_GITHUB]/pemrograman_web_itera_[NIM]`
 
 ---
