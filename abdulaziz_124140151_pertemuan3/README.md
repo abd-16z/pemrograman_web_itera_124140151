@@ -4,16 +4,15 @@
 
 ---
 
-## 👤 Identitas Mahasiswa
-- **Nama Lengkap:** [NAMA LENGKAP MAHASISWA]
-- **NIM:** [NIM MAHASISWA]
-- **Kelas Praktikum:** [RA / RB]
-- **Tautan Repositori GitHub:** `https://github.com/[USERNAME_GITHUB]/pemrograman_web_itera_[NIM]`
+## Identitas Mahasiswa
+- **Nama Lengkap:** Abdul Aziz
+- **NIM:** 124140151
+- **Kelas Praktikum:** RB
 
 ---
 
-## 📖 Deskripsi Aplikasi
-**Koleksi BukuKu** adalah aplikasi manajemen buku pribadi berbasis **React** yang membantu pengguna mencatat dan mengelola daftar buku yang sudah dimiliki (`milik`), sedang dibaca (`baca`), maupun buku yang ingin dibeli (`beli`).
+## Deskripsi Aplikasi
+**Koleksi Buku** adalah aplikasi manajemen buku pribadi berbasis **React** yang membantu pengguna mencatat dan mengelola daftar buku yang sudah dimiliki (`milik`), sedang dibaca (`baca`), maupun buku yang ingin dibeli (`beli`).
 
 Aplikasi ini dibangun menggunakan konsep dasar React sesuai materi modul praktikum, meliputi:
 1. **Component-Based Architecture & Props Validation (`PropTypes`):** Memecah antarmuka menjadi komponen-komponen *reusable* (`Header`, `Navbar`, `BookForm`, `BookFilter`, dan `BookList`).
@@ -24,10 +23,10 @@ Aplikasi ini dibangun menggunakan konsep dasar React sesuai materi modul praktik
 
 ---
 
-## 🚀 Instruksi Instalasi dan Cara Menjalankan Aplikasi
+## Instruksi Instalasi dan Cara Menjalankan Aplikasi
 
 ### Prasyarat
-Pastikan **Node.js** (v18+ atau v20+) dan **npm** sudah terpasang di komputer Anda.
+**Node.js** (v18+ atau v20+) dan **npm** sudah terpasang di komputer .
 
 ### Langkah-langkah Menjalankan Project Tugas:
 1. **Masuk ke direktori project:**
@@ -47,12 +46,12 @@ Pastikan **Node.js** (v18+ atau v20+) dan **npm** sudah terpasang di komputer An
 
 ### Menjalankan Unit Testing (Vitest & React Testing Library):
 ```bash
-npm test
+npx vitest run --reporter=verbose
 ```
 
 ---
 
-## ✅ Daftar Fitur & Persyaratan yang Diimplementasikan
+## Daftar Fitur & Persyaratan yang Diimplementasikan
 
 ### 1. Fitur Dasar
 - [x] **Menambah Buku Baru:** Input judul buku, nama penulis, dan pilihan status (`milik`, `baca`, `beli`).
@@ -78,7 +77,7 @@ npm test
 
 ---
 
-## 📸 Screenshot Antarmuka & Laporan Testing
+## Screenshot Antarmuka & Laporan Testing
 
 > *Simpan hasil tangkapan layar aplikasi pada folder `screenshots/` saat pengumpulan.*
 
@@ -94,24 +93,10 @@ npm test
 ### 4. Laporan Hasil Eksekusi Unit Test di Terminal
 ![Hasil Unit Test](screenshots/hasil_unit_test.png)
 
-Contoh output eksekusi `npm test`:
-```text
- ✓ src/components/BookList/BookList.test.jsx (4 tests) 32ms
-   ✓ Komponen BookList > merender daftar judul dan penulis buku dengan benar
-   ✓ Komponen BookList > menampilkan pesan kosong jika belum ada data buku
-   ✓ Komponen BookList > memanggil fungsi onEdit saat tombol Edit diklik
-   ✓ Komponen BookList > memanggil fungsi onDelete saat tombol Hapus diklik
- ✓ src/components/BookForm/BookForm.test.jsx (2 tests) 29ms
-   ✓ Komponen BookForm > menampilkan pesan error validasi ketika form disubmit dalam keadaan kosong
-   ✓ Komponen BookForm > memanggil fungsi onSubmitBook saat form diisi dengan benar
-
- Test Files  2 passed (2)
-      Tests  6 passed (6)
-```
 
 ---
 
-## 📂 Struktur Folder Project
+## Struktur Folder Project
 ```text
 tugas_pertemuan3/
 ├── index.html
@@ -119,45 +104,41 @@ tugas_pertemuan3/
 ├── vite.config.js
 ├── README.md
 ├── src/
-│   ├── components/
-│   │   ├── Header/
-│   │   │   ├── Header.jsx
-│   │   │   └── Header.css
-│   │   ├── Navbar/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Navbar.css
-│   │   ├── BookForm/
-│   │   │   ├── BookForm.jsx
-│   │   │   ├── BookForm.css
-│   │   │   └── BookForm.test.jsx
-│   │   ├── BookFilter/
-│   │   │   ├── BookFilter.jsx
-│   │   │   └── BookFilter.css
-│   │   └── BookList/
-│   │       ├── BookList.jsx
-│   │       ├── BookList.css
-│   │       └── BookList.test.jsx
-│   ├── pages/
-│   │   ├── Home/
-│   │   │   ├── Home.jsx
-│   │   │   └── Home.css
-│   │   ├── Stats/
-│   │   │   ├── Stats.jsx
-│   │   │   └── Stats.css
-│   │   └── NotFound/
-│   │       ├── NotFound.jsx
-│   │       └── NotFound.css
-│   ├── hooks/
-│   │   ├── useLocalStorage.js
-│   │   └── useBookStats.js
-│   ├── context/
-│   │   └── BookContext.jsx
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── setupTests.js
-└── modul_latihan/               # Bagian latihan modul & 6 Latihan Mandiri
-    ├── praktik-cepat-cdn/
-    │   └── index.html
-    └── my-react-app/
+   ├── components/
+   │   ├── Header/
+   │   │   ├── Header.jsx
+   │   │   └── Header.css
+   │   ├── Navbar/
+   │   │   ├── Navbar.jsx
+   │   │   └── Navbar.css
+   │   ├── BookForm/
+   │   │   ├── BookForm.jsx
+   │   │   ├── BookForm.css
+   │   │   └── BookForm.test.jsx
+   │   ├── BookFilter/
+   │   │   ├── BookFilter.jsx
+   │   │   └── BookFilter.css
+   │   └── BookList/
+   │       ├── BookList.jsx
+   │       ├── BookList.css
+   │       └── BookList.test.jsx
+   ├── pages/
+   │   ├── Home/
+   │   │   ├── Home.jsx
+   │   │   └── Home.css
+   │   ├── Stats/
+   │   │   ├── Stats.jsx
+   │   │   └── Stats.css
+   │   └── NotFound/
+   │       ├── NotFound.jsx
+   │       └── NotFound.css
+   ├── hooks/
+   │   ├── useLocalStorage.js
+   │   └── useBookStats.js
+   ├── context/
+   │   └── BookContext.jsx
+   ├── App.jsx
+   ├── App.css
+   ├── main.jsx
+   └── setupTests.js
 ```
