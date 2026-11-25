@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env*/
+
+# SQLite local databases
+*.sqlite
+*.db
+
+# Packaging & distribution
+*.egg
+*.egg-info
+build/
+dist/
+.tox/
+
+# Testing & coverage
+.coverage
+coverage.xml
+nosetests.xml
+coverage
+test
+.pytest_cache/
+
+# IDE & OS files
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.sublime-project
+*.sublime-workspace
+.*.sw?
+.sw?
+tmp/
+Data.fs*
